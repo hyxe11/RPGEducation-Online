@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/fernandocss.css">
+    <title>Fernando Schütz</title>
+</head>
+
+<body style="background-image: url(img/wll.png);">
+    
+    
+    <div class="container">
+        <h1 style="font-weight: bold;margin-left: 15px;">Fernando Bernardes Schütz</h1>
+        <img src="img/john.png" alt="" style="margin-top: 50px; margin-left: 10px;" title="Não sou eu, calma kk" id="imagem">
+        <video src="msc/DOOM.mp4" style="margin-top: 50px; margin-left: 10px;" id="video"></video>
+        <script>
+            const imagem = document.getElementById('imagem');
+            const video = document.getElementById('video');
+            video.volume = 0.5;
+            imagem.addEventListener('mouseenter', () => {
+                imagem.style.display = 'none';
+                video.style.display = 'block';
+                video.play();
+            });
+
+            video.addEventListener('mouseleave', () => {
+                video.pause();
+                video.currentTime = 0;
+                video.style.display = 'none';
+                imagem.style.display = 'block';
+            });
+        </script>
+
+            <div class="sobre-back" style="margin-left: 20px;">
+                <p style="margin-left: 15px;" >bla bla bla</p>
+                <a class="btn-back" href="sobre.html">Voltar</a>
+                
+                </div>
+                <br>
+    </div>
+
+</body>
+</html>
