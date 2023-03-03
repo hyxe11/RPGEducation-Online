@@ -1,0 +1,338 @@
+        .criator{
+            font-style: oblique; 
+            font-weight: bold;
+        }
+        
+        .rpgtitu{
+            color: #cfcfcf; 
+            text-decoration: none;
+        }
+
+        
+        .cont {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            height: 440px;
+            margin-top: 10px;
+        }
+        #logorpi{
+            position: relative;
+            animation: slide 2s;
+            width: 99%;
+            height: 100px;
+            border-radius: 8px;
+            align-items: center;
+            align-content: center;
+            text-align: center;
+            margin-top: 90px;
+            box-shadow: inset 0px 0px 15px 2px;
+            transition: 0.5s;
+            background-color: rgb(255, 255, 255, 0.3);
+            pointer-events: auto;
+            z-index: 1;
+        }
+
+        #logorpi h1{
+            align-items: center;
+            display: flex;
+            height: 100%;
+            justify-content: center;
+            text-align: center;
+            transition: 0.8s;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }   
+
+        #logorpi:hover h1{
+            
+            align-items: center;
+            height: 12%;
+            justify-content: center;
+            text-align: center;
+            pointer-events: none;
+            padding: 10px;
+        }   
+
+        #logorpi p{  
+            opacity: 0;
+            margin-top: 0;
+            transition: opacity 0.5s ease-in-out;
+            pointer-events: none;
+            
+        }
+
+        #logorpi:hover p{
+            opacity: 1;
+            pointer-events: none;
+        }
+
+        
+
+        #logorpi hr{
+            opacity: 0;
+            border-color: black;
+            transition: opacity 0.3s ease-in-out;
+            pointer-events: none;
+        }
+
+        #logorpi:hover hr{
+            opacity: 1;
+            pointer-events: none;
+        }
+
+        #logorpi:hover{
+            height: 280px;
+            transition: 0.8s;
+            pointer-events: auto;
+        }
+
+        #box-txt{
+            
+            box-shadow: 0px 0px 15px 2px;
+            background-color: rgb(255, 255, 255);
+            width: 70%;
+            height: 440px;
+            border-radius: 8px;
+            transition: 0.8s;
+            z-index: 2;
+            overflow: hidden;
+            margin-bottom: 10px;
+            
+        }
+
+        #box-txt2{
+            
+            box-shadow: 0px 0px 15px 2px;
+            width: 25%;
+            height: 440px;
+            border-radius: 8px;
+            margin-left: 60px;
+            z-index: 3;
+            overflow: hidden;
+            margin-bottom: 10px;
+            
+        }
+
+        
+
+        .download {
+            appearance: none;
+            background-color: rgb(63, 40, 5);
+            border: 0.125em solid #1A1A1A;
+            border-radius: 0.9375em;
+            box-sizing: border-box;
+            color: #ffffff;
+            cursor: pointer;
+            display: inline-block;
+            font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+            font-size: 16px;
+            font-weight: 600;
+            line-height: normal;
+            margin: 0;
+            min-height: 3.75em;
+            min-width: 0;
+            outline: none;
+            padding: 1em 2.3em;
+            text-align: center;
+            text-decoration: none;
+            transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            will-change: transform;
+            margin-top: 10px;
+            margin-left: 120px;
+            
+            }
+
+            .download:disabled {
+            pointer-events: none;
+            }
+
+            .download:hover {
+            color: #fff;
+            background-color: #1A1A1A;
+            box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+            transform: translateY(-2px);
+            }
+
+            .download:active {
+            box-shadow: none;
+            transform: translateY(0);
+            }
+
+            .sobre {
+            appearance: none;
+            background-color: rgb(63, 40, 5);
+            border: 0.125em solid #1A1A1A;
+            border-radius: 0.9375em;
+            box-sizing: border-box;
+            color: #ffffff;
+            cursor: pointer;
+            display: inline-block;
+            font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+            font-size: 16px;
+            font-weight: 600;
+            line-height: normal;
+            margin: 0;
+            min-height: 3.75em;
+            min-width: 0;
+            outline: none;
+            padding: 1em 2.3em;
+            text-align: center;
+            text-decoration: none;
+            transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            will-change: transform;
+            margin-top: 80px;
+            margin-left: -132px;
+            position: fixed;
+            
+            }
+
+            .sobre:disabled {
+            pointer-events: none;
+            }
+
+            .sobre:hover {
+            color: #fff;
+            background-color: #1A1A1A;
+            box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+            transform: translateY(-2px);
+            }
+
+            .sobre:active {
+            box-shadow: none;
+            transform: translateY(0);
+            }
+
+            body {
+            zoom: 90%;
+            touch-action: pan-x pan-y; /* para impedir o zoom em dispositivos móveis */
+            }
+
+            /* desabilitar o zoom do Chrome */
+            @media screen and (-webkit-min-device-pixel-ratio:0) {
+            /* CSS a ser aplicado em dispositivos com motor WebKit (como o Chrome) */
+            body {
+                zoom: reset; /* desabilita o zoom */
+                -webkit-text-size-adjust: none; /* desabilita o ajuste de tamanho do texto */
+            }
+            }
+
+
+            .footer {
+                position: fixed;
+                bottom: 0;
+                right: 0;
+                background-color: black;
+                color: white;
+                text-align: center;
+                padding: 0px;
+                width: 100%;
+                z-index: 4;
+                
+            }
+
+            .header {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                background-color: black;
+                color: white;
+                text-align: center;
+                padding: 10px;
+                width: 100%;
+            }
+
+
+
+                .user {
+                display: flex;
+                align-items: center;
+                float: right;
+                }
+
+                .user img {
+                height: 41px;
+                margin-right: 6px;
+                vertical-align: middle; 
+                }
+
+                .user a {
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 18px;
+                transition: 0.5s;
+                }
+
+                .user a:hover {
+                    color:grey;
+                    transition: 0.5s;
+                }
+
+                .register {
+                color: white;
+                padding: 10px 20px;
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 18px;
+                vertical-align: middle;
+                transition: 0.5s;
+                float: right;
+                margin-right: 15px;
+                }
+
+                .register:hover {
+                    color:grey;
+                    transition: 0.5s;
+                }
+
+                .user,
+                .register {
+                display: inline-block;
+                }
+
+                @media only screen and (max-width: 600px) {
+            /* Estilos para telas menores */
+            }
+
+            .fogo {
+            font-family:'Times New Roman', Times, serif;
+            position: relative;
+            color: #770000;
+            float: left; 
+            margin:0;
+            }
+
+            .fogo::before {
+            content: "";
+            position: absolute;
+            left: -5px;
+            top: -10px;
+            right: -5px;
+            bottom: -10px;
+            background: url("https://media2.giphy.com/media/13tB0WgrJvp5DO/200.webp?cid=ecf05e473no6lk3iby9gfdf17zxxtauglymgafeltbt4g5f0&rid=200.webp&ct=g") no-repeat center center;
+            background-size: cover;
+            -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+            mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+            -webkit-mask-size: cover;
+            mask-size: cover;
+            z-index: -1;
+            animation: fire 1s infinite;
+            }
+
+            @keyframes fire {
+            0% { transform: translate(-5px, -10px) scale(0.9); }
+            50% { transform: translate(-5px, -10px) scale(1.1); }
+            100% { transform: translate(-5px, -10px) scale(0.9); }
+            }
+
+
+
+    

@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    margin-bottom: 10px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* estilo da barra de menu */
+  .menu-bar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -200px;
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: all 0.3s ease-out;
+  }
+  
+  .menu-bar a {
+    display: block;
+    padding: 10px;
+    background-color: #444;
+    color: #fff;
+    margin-bottom: 10px;
+    text-decoration: none;
+  }
+
+  .menu-bar a:hover {
+    background-color: #555;
+  }
+
+  #menu-toggle {
+    display: block;
+    position: fixed;
+    top: 4px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 999;
+  }
+
+  #menu-toggle:hover {
+    background-color: #555;
+  }
+
+  #menu-toggle.active {
+    transform: rotate(180deg) translateX(200px);
+  }
+
+  .menu-bar.active {
+    transform: translateX(200px);
+  }
+
+  #menu-toggle.active {
+    transform: translateX(200px);
+  }
+  
+  #menu-toggle {
+    transition: all 0.3s ease-out;
+  }
+
+  #menu-toggle.active {
+    transform: rotate(180deg) translateX(200px);
+  }
+  
+  .main-content {
+    padding: 20px;
+    transition: all 0.3s ease-out;
+  }
+  
+  .main-content.active {
+    margin-left: 200px;
+    width: calc(100% - 200px);
+    transition: all 0.3s ease-out;
+  }
+
+  /* Esprema a área de jogo quando a barra de menu estiver ativa */
+  .menu-bar.active + .main-content.active {
+    margin-left: 0;
+    width: calc(100% - 20px);
+  }
+
+  
+  .content-container {
+      width: calc(100% - 20px);
+      transition: all 0.3s ease-out;
+      margin-left: 10px;
+      margin-top: 50px;
+      background-color: rgb(255, 255, 255, 0.3);
+      border-radius: 10px;
+      box-shadow: inset 0px 0px 15px 2px;
+      }
+
+      .menu-bar.active + .content-container {
+      margin-left: 200px;
+      width: calc(100% - 220px);
+      transition: all 0.3s ease-out;
+      }
+
+      .main-content {
+      padding: 20px;
+      }
+
+      .main-content h1 {
+      margin-top: 0;
+      }

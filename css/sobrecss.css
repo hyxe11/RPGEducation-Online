@@ -1,0 +1,225 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 0px;
+    width: 100%;
+    z-index: 4;
+    
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+    .user {
+    display: flex;
+    align-items: center;
+    float: right;
+    }
+
+    .user img {
+    height: 41px;
+    margin-right: 6px;
+    vertical-align: middle; 
+    }
+
+    .user a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.5s;
+    }
+
+    .user a:hover {
+        color:grey;
+        transition: 0.5s;
+    }
+
+    .register {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    vertical-align: middle;
+    transition: 0.5s;
+    float: right;
+    margin-right: 20px;
+    }
+
+    .register:hover {
+        color:grey;
+        transition: 0.5s;
+    }
+
+    .user,
+    .register {
+    display: inline-block;
+    }
+
+    .fogo {
+font-family:'Times New Roman', Times, serif;
+position: relative;
+color: #770000;
+}
+
+.fogo::before {
+content: "";
+position: absolute;
+left: -5px;
+top: -10px;
+right: -5px;
+bottom: -10px;
+background: url("https://media2.giphy.com/media/13tB0WgrJvp5DO/200.webp?cid=ecf05e473no6lk3iby9gfdf17zxxtauglymgafeltbt4g5f0&rid=200.webp&ct=g") no-repeat center center;
+background-size: cover;
+-webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+-webkit-mask-size: cover;
+mask-size: cover;
+z-index: -1;
+animation: fire 1s infinite;
+}
+
+@keyframes fire {
+0% { transform: translate(-5px, -10px) scale(0.9); }
+50% { transform: translate(-5px, -10px) scale(1.1); }
+100% { transform: translate(-5px, -10px) scale(0.9); }
+}
+
+#box-txt{
+
+box-shadow: 0px 0px 15px 2px;
+background-color: white;
+width: 70%;
+height: 480px;
+border-radius: 8px;
+transition: 0.8s;
+z-index: 2;
+overflow: hidden;
+margin-bottom: 10px;
+margin: 0 auto;
+}
+
+.btn-back,.btn-back::after {
+padding: 10px 50px;
+font-size: 20px;
+border: cyan;
+border-radius: 5px;
+color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+position: relative;
+text-decoration: none;
+transition: 0.5s;
+box-shadow: 0px 0px 15px 2px;
+margin-left: 28.5%;
+margin-top: 30px;
+
+}
+
+.btn-back::after {
+--move1: inset(50% 50% 50% 50%);
+--move2: inset(31% 0 40% 0);
+--move3: inset(39% 0 15% 0);
+--move4: inset(45% 0 40% 0);
+--move5: inset(45% 0 6% 0);
+--move6: inset(14% 0 61% 0);
+clip-path: var(--move1);
+content: 'VOLTAR';
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+display: block;
+}
+
+.btn-back:hover::after {
+animation: glitch_4011 1s;
+text-shadow: 10 10px 10px black;
+animation-timing-function: steps(2, end);
+text-shadow: -3px -3px 0px #1df2f0, 3px 3px 0px #E94BE8;
+background-color: transparent;
+border: 3px solid rgb(0, 255, 213);
+
+}
+
+.btn-back:hover {
+text-shadow: -1px -1px 0px #1df2f0, 1px 1px 0px #E94BE8;
+}
+
+.btn-back:hover {
+background-color: white;
+border: 1px solid rgb(0, 255, 213);
+box-shadow: 0px 0px 15px 2px rgb(0, 255, 213);
+color: black;
+}
+
+@keyframes glitch_4011 {
+0% {
+clip-path: var(--move1);
+transform: translate(0px,-10px);
+}
+
+10% {
+clip-path: var(--move2);
+transform: translate(-10px,10px);
+}
+
+20% {
+clip-path: var(--move3);
+transform: translate(10px,0px);
+}
+
+30% {
+clip-path: var(--move4);
+transform: translate(-10px,10px);
+}
+
+40% {
+clip-path: var(--move5);
+transform: translate(10px,-10px);
+}
+
+50% {
+clip-path: var(--move6);
+transform: translate(-10px,10px);
+}
+
+60% {
+clip-path: var(--move1);
+transform: translate(10px,-10px);
+}
+
+70% {
+clip-path: var(--move3);
+transform: translate(-10px,10px);
+}
+
+80% {
+clip-path: var(--move2);
+transform: translate(10px,-10px);
+}
+
+90% {
+clip-path: var(--move4);
+transform: translate(-10px,10px);
+}
+
+100% {
+clip-path: var(--move1);
+transform: translate(0);
+}
+}
